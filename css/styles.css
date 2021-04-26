@@ -6,53 +6,40 @@
 }
 
 html {
-    background-color: lightgray;
     font-family: Arial, Helvetica, sans-serif;
-   
+    
 }
 
+/* ==== Layout Container Styles ==== */
+
 body {
-    display: flex;
+    font-family: 'Roboto', sans-serif; 
+    background-color: lightgray;
 }
 
 .wrapper {
-    max-width: 1200px;
-    width: 100%;
+    padding: 20px;
 }
 
 header {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 5rem;
+   padding: 1em 0; 
 }
 
 .main-nav {
 
 }
-.container {
-    display: inline-block;
-    flex-wrap: wrap;
-    margin: auto;
+main {
     background-color: ivory;
     padding: 20px;
 }
 
-section {
-    display: flex;
-    flex-direction: row;
-}
 .portfolio {
-    min-width: 30%;
+    max-width: 30%;
     text-align: center;
     padding: 1em;
 }
 
-.image-tile {
-    max-width: 300px;
-    width: 100%;
-    height: auto;
-}
-
+/* ==== Base Element Styles ==== */
 
 
 
@@ -65,17 +52,18 @@ a:hover {
     color: #CAB044;
 }
 
-.header-image {
-    float: right;
+.image-tile {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
 }
 
-h1, h2 {
+h2 {
     text-align: center;
 }
-
 .contact,
 .skills {
-    text-align: center;
+    width: 100%;
     max-width: 600px;
 }
 footer {
@@ -84,17 +72,36 @@ footer {
 }
 
 /* ================================================= 
+   Flexbox Styles
+==================================================== */
+
+.main-nav {
+
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;}
+
+
+/* ================================================= 
    Media Queries
 ==================================================== */
 
-@media (min-width: 768px){
+@media (min-width: 769px){
+    
+    .wrapper {
+        width: 70%;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
 
-
-
+    #return {
+        display: none;
+    }
 }
 @media (min-width: 1024px) {
-
-
+  
 
 
 }
