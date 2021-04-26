@@ -13,7 +13,6 @@ html {
 body {
     font-family: 'Roboto', sans-serif; 
     background: lightgray;
-    padding: 20px;
 }
 
 /* ==== Layout Container Styles ==== */
@@ -72,6 +71,7 @@ ul {
 ul li {
     background: ghostwhite;
     margin: 5px 0;
+    text-transform: uppercase;
 }
 
 /* .banner img {
@@ -129,13 +129,15 @@ header {
     
 
     .banner {
+        padding: 2em;
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
     }
 
     .banner p {
-        padding: 2em;
+        padding: 0 2em 1em;
+        text-align: left;
     }
 
     .container {
@@ -153,18 +155,31 @@ header {
     }
 }
 @media (min-width: 1025px) {
+    body {
+        max-width: 1125px;
+        padding: 0 20px;
+        margin: 0 auto;
+    }
     .main-header {
         max-width: 1125px;
+        display: flex;
         flex-direction: row;
         justify-content: space-between;
+        
     }
     .banner {
-        max-width: 1200px;
+        max-width: 1125px;
+        padding: 2em;
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
-
     }
+
+    .banner p {
+        padding: 0 2em 1em;
+        text-align: left;
+    }
+
     ul {
         list-style: none;
     }
