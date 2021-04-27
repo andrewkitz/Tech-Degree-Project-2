@@ -13,18 +13,20 @@
     <div class="wrapper">
       <header class="main-header">
         <h1 class="name">Andrew Kitz</h1>
+            <nav>
               <ul class="main-nav">
                 <li><a href="#">Home</a></li>
                 <li><a href="#PORTFOLIO">Portfolio</a></li>
-                <li><a href="#SKILLS">Skills</a></li>
-                <li><a href="#CONTACT">Contact</a></li>
+                <li><a href="#skills-link">Skills</a></li>
+                <li><a href="#contact-link">Contact</a></li>
               </ul>
+            </nav>
       </header>      
         <div class="banner">
           <img src="images\responsive-layout-profile.png" class="header-image">
           <p>Hello, I'm a front end developer who loves CSS and responsive design. I recently learned front-end web development at Treehouse and am excited to put my skills to use.</p>
         </div>
-      <main>
+      <main class="main-port">
         <h2 a id="PORTFOLIO">PORTFOLIO</h2>
         <div class="container">
           <div class="portfolio-1 portfolio">
@@ -57,26 +59,36 @@
               <h3>Calculator</h3>
               <p>Someone can enter in the numbers they want and press the big blue button and get the result.</p>
           </div>
-      </div>
-          <div class="skills" a id="SKILLS">
-              <h2>SKILLS</h2>
+        </div>
+      </main>
+      <main class="main-sub">
+          <div id="skills">
+              <h2 a id="skills-link">SKILLS</h2>
+                <ul id="skills-list">
+                  <li>Intermediate HTML</li>
+                  <li>Introductory CSS</li>
+                  <li>Intermediate Adobe Creative Suite</li>
+                  <li>Digital Marketing</li>
+                  <li>Copy Writing and Editing</li>
+                  <li>Google Analytics</li>
+                </ul>
           </div>
-          <div class="contact" a id="CONTACT">
-              <h2>CONTACT</h2>
+          <div id="contact">
+              <h2 a id="contact-link">CONTACT</h2>
               <p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you.</p>
-              <p>Phone: 555-CODE-NUT</p>
-              <p>Email: ak@andrewkitz.com</p>
+              <p>Phone: <b>555-CODE-NUT</b></p>
+              <p>Email: <b>ak@andrewkitz.com</b></p>
           </div>
+      </main>
      <footer>
-        <div><h3>Andrew Kitz</h3>
+        <h3>Andrew Kitz</h3>
+        <a id="return" href="#">Back to Top</a>
             <nav class="footer-nav">
               <a href="#">Home</a>
               <a href="#PORTFOLIO">Portfolio</a>
-              <a href="#SKILLS">Skills</a>
-              <a href="#CONTACT">Contact</a>
+              <a href="#skills-link">Skills</a>
+              <a href="#contact-link">Contact</a>
             </nav>
-            <p><a id="return" href="#">Back to Top</a></p>
-        </div>
      </footer>
     </div>
   </body>

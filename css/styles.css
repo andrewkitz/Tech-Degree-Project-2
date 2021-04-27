@@ -26,29 +26,25 @@ header {
 	text-align: center;
 	display: block;
 }
-main {
-    background: ivory;
+.main-port{
+    background: ghostwhite;
     padding: 20px;
+} 
+
+.main-sub {
+    text-align: center;
+    width: 90%;
+    max-width: 600px;
+    margin: 20px auto; 
 }
 
-.contact,
-.skills {
-    width: 100%;
-    max-width: 600px;
-    text-align: center;
-    margin: 0 auto; 
-}
 footer {
     font-size: .75rem;
-    display: inline-block;
+    width: 90%;
+    margin: 0 auto;
 }
 
-.portfolio {
-    max-width: 80%;
-    text-align: center;
-    padding: 1em;
-    margin: 0 auto;
-}     
+
 
 /* ==== Base Element Styles ==== */
 
@@ -86,9 +82,17 @@ ul li {
 }
 .banner p {
     font-size: 1.25rem;
-    padding: 0 1rem 1rem 1rem;
+    padding: 0 2rem 1rem 1rem;
     text-align: center;
 }
+
+.portfolio {
+    max-width: 80%;
+    text-align: center;
+    padding: 1em;
+    margin: 0 auto;
+}    
+
 .image-tile {
     width: 100%;
     max-width: 400px;
@@ -99,6 +103,18 @@ h2 {
     text-align: center;
 }
 
+#skills {
+    background: navy;
+    color: oldlace;
+    padding: 1em;
+}
+
+#skills ul li {
+    background: none;
+    width: 100%;
+    text-align: left;
+    list-style: circle;
+}
 
 /* ================================================= 
    Flexbox Styles
@@ -109,11 +125,21 @@ header {
     justify-content: center;
 }
 
-
 .banner {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.footer-nav {
+    display: none;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
 }
 
 /* ================================================= 
@@ -124,6 +150,7 @@ header {
     .main-header,
     .main-nav {
         display: flex;
+        flex direction: row;
     }
     .main-header {
         width: 90%;
@@ -132,6 +159,12 @@ header {
         align-items: center;
     }
     
+    ul li {
+        background: lightgray;
+        max-width: 200px;
+        margin: 5px auto;
+        text-transform: uppercase;
+    }
 
     .banner {
         padding: 2em;
@@ -141,7 +174,7 @@ header {
     }
 
     .banner p {
-        padding: 0 1rem 1rem 1rem;
+        padding: 0 2rem 1rem 1rem;
         text-align: left;
     }
 
@@ -155,10 +188,40 @@ header {
         text-align: center;
         padding: 1em;
     }
+
+    footer {
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .footer-nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
     #return {
         display: none;
     }
 }
+
+@media (min-width: 500px) {
+    .skills {
+        
+    }
+    #skills-list {
+        width: 90%;
+        margin: 0 auto;
+        height: 8em;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: left;
+    }
+}
+
 @media (min-width: 1025px) {
     body {
         max-width: 1125px;
@@ -172,6 +235,14 @@ header {
         justify-content: space-between;
         
     }
+
+    ul li {
+        background: lightgray;
+        max-width: 200px;
+        margin: 5px auto;
+        text-transform: uppercase;
+    }
+
     .banner {
         max-width: 1125px;
         padding: 2em;
@@ -181,7 +252,7 @@ header {
     }
 
     .banner p {
-        padding: 0 1rem 1rem 1rem;
+        padding: 0 2rem 1rem 1rem;
         text-align: left;
     }
 
@@ -198,5 +269,18 @@ header {
         max-width: 30%;
         text-align: center;
         padding: 1em;
-    }    
+    }   
+    
+    footer {
+        max-width: 1125px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .footer-nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
 }   
