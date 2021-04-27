@@ -69,19 +69,24 @@ ul {
 }
 
 ul li {
+    max-width: 200px;
     background: ghostwhite;
-    margin: 5px 0;
+    margin: 5px auto;
     text-transform: uppercase;
 }
 
-/* .banner img {
-    width: 100%;
-    max-width: 400px;
-} */
+.banner img {
+    width: 80%;
+    max-width: 450px;
+    margin: 0 auto;
+}
+
 .banner {
     padding-bottom: 2em;
 }
 .banner p {
+    font-size: 1.25rem;
+    padding: 0 1rem 1rem 1rem;
     text-align: center;
 }
 .image-tile {
@@ -136,7 +141,7 @@ header {
     }
 
     .banner p {
-        padding: 0 2em 1em;
+        padding: 0 1rem 1rem 1rem;
         text-align: left;
     }
 
@@ -176,7 +181,7 @@ header {
     }
 
     .banner p {
-        padding: 0 2em 1em;
+        padding: 0 1rem 1rem 1rem;
         text-align: left;
     }
 
