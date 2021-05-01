@@ -57,6 +57,15 @@ a:hover {
     color: #CAB044;
 }
 
+.h2-link {
+    text-decoration: none;
+    color: black;
+}
+
+.h2-link:hover {
+    color: black;
+}
+
 ul {
     display: block;
     list-style: none;
@@ -145,6 +154,17 @@ footer {
    Media Queries
 ==================================================== */
 
+@media (min-width: 500px) {
+    #skills-list {
+        width: 90%;
+        margin: 0 auto;
+        height: 8em;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: left;
+    }
+}
 @media (min-width: 769px){
     .main-header,
     .main-nav {
@@ -176,7 +196,10 @@ footer {
         padding: 0 2rem 1rem 1rem;
         text-align: left;
     }
-
+    h2 {
+        width: 100%;
+        margin: 1em auto;
+    }
     .container {
         display: flex;
         flex-wrap: wrap;
@@ -203,21 +226,6 @@ footer {
 
     #return {
         display: none;
-    }
-}
-
-@media (min-width: 500px) {
-    .skills {
-        
-    }
-    #skills-list {
-        width: 90%;
-        margin: 0 auto;
-        height: 8em;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: left;
     }
 }
 
@@ -260,7 +268,7 @@ footer {
     }
 
     .container {
-        display: flex;
+        display: inline-flex;
         flex-wrap: wrap;
         justify-content: space-around;
     }
