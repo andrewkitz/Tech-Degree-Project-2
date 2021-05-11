@@ -153,19 +153,7 @@ footer {
 /* ================================================= 
    Media Queries
 ==================================================== */
-
-@media (min-width: 500px) {
-    #skills-list {
-        width: 90%;
-        margin: 0 auto;
-        height: 8em;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: left;
-    }
-}
-@media (min-width: 769px){
+@media (min-width: 768px){
     .main-header,
     .main-nav {
         display: flex;
@@ -229,7 +217,7 @@ footer {
     }
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 1024px) {
     body {
         max-width: 1125px;
         padding: 0 20px;
